@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float Example</title>
+
+<style>
+
+.floatL {
+	float: left;
+}
+.floatR {
+	float: right;
+}
+
+</style>
+
+</head>
+<body>
+	<div class="cf">
+		<div class="floatL">
+			<h2>Floated Content</h2>
+		</div>
+		<div class="floatR">
+			<h2>Other Floated Content</h2>
+		</div>
+	</div>
+
+	<div class="not">
+		<h2>Not floated</h2>
+	</div>
+
+	<style>
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+	</style>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#marlow li {
+	margin-bottom: 10px;
+}
+
+#marlow pre {
+	width: auto;
+}
+#marlow p {
+	letter-spacing: normal;
+}
+#marlow pre code {
+	padding: 15px;
+	max-height: none;
+	overflow: visible;
+}
+
